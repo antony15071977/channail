@@ -297,8 +297,8 @@
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /*padding-left: 1rem;
+    padding-right: 1rem;*/
     width: 100%;
 }
 .container {
@@ -307,15 +307,8 @@
     position: relative;
     width: auto;
 }
-.container.block-item {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
 .has-pt-1 {
-    padding-top: .5rem!important;
-}
-.has-pb-1 {
-    padding-bottom: .5rem!important;
+    margin-top: 17px;
 }
 .row {
     box-sizing: border-box;
@@ -331,32 +324,15 @@
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -1rem;
-    margin-left: -1rem;
 }
-@media only screen and (min-width: 768px) {
-.col-sm-offset-1 {
-    margin-left: 8.333%;
-}
-}
-@media only screen and (min-width: 768px) {
-.col-sm-10 {
-    -ms-flex-preferred-size: 83.333%;
-    flex-basis: 83.333%;
-    -webkit-flex-basis: 83.333%;
-    max-width: 83.333%;
-    width: 83.333%;
-}
-}
+
 @media only screen and (min-width: 768px) {
 .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
     box-sizing: border-box;
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
     flex: 0 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
+   }
 }
 .socials .row:last-child {
     padding-bottom: 0;
@@ -366,10 +342,6 @@
 }
 .socials .row {
     padding-bottom: 15px;
-}
-.row-small {
-    margin-right: -.5rem!important;
-    margin-left: -.5rem!important;
 }
 .col-xs-12 {
     -ms-flex-preferred-size: 100%;
@@ -384,19 +356,28 @@
     color: #fff!important;
     border-color: #55cd6c!important;
 }
+.btn-link-inst, .btn-link-inst:active, .btn-link-inst:hover, .btn-link-inst:link, .btn-link-inst:visited {
+    background: #f09433; 
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: #fff!important;
+    border: none;
+}
 .btn-link, .btn-link:active, .btn-link:hover, .btn-link:link, .btn-link:visited {
     display: block;
     width: 100%;
     padding: 1.2rem;
     text-decoration: none!important;
-    font-size: 2em;
-    border: 2px solid transparent;
+    font-size: 18px;
+    font-family: "Roboto", Sans-serif;
     border-radius: 2px;
     position: relative;
     height: auto;
     line-height: 1.2;
     white-space: normal;
-    min-height: 60px;
+    min-height: 59px;
+    font-weight: 500;
 }
 .btn-map, .btn-socials {
     display: flex!important;
@@ -422,8 +403,140 @@
     vertical-align: top;
     user-select: none;
 }
-
-
+.iconsoc {
+	width: 40px;
+    display: block;
+    margin-right: 12px;
+}
+/*---------------MODAL-------------------*/
+.modal {
+  will-change: visibility, opacity;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-delay: $modal-delay;
+          transition-delay: $modal-delay;
+}
+.modal__bg:before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.7;
+	z-index: -999;
+}
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal--align-top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.modal__bg {
+  background: transparent;
+}
+.modal__dialog {
+  max-width: 800px;
+  padding: 1.2rem;
+}
+.modal__content {
+  will-change: transform, opacity;
+  position: relative;
+  padding: 5%;
+  background: white;
+  background-clip: padding-box;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.25);
+  opacity: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+}
+.modal__content--active {
+  opacity: 1;
+}
+.modal__close {
+  z-index: 1100;
+  cursor: pointer;
+}
+.modal__trigger {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.modal__trigger--active {
+  z-index: 10;
+}
+.modal__trigger:hover {
+  background: transparent;
+}
+#modal__temp {
+  will-change: transform, opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+  z-index: 1000;
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.demo-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.2rem;
+  padding: 0.6rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.demo-close svg {
+  width: 24px;
+  fill: #fff;
+  pointer-events: none;
+  vertical-align: top;
+}
+.demo-close:hover {
+  background: rgba(0,0,0,0.6);
+}
+.demo-close svg:hover {
+	fill:#ffec00;
+}
 
 @media (max-width:1400px) { 
 	.hide_1400 {
