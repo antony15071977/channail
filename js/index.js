@@ -59,16 +59,16 @@ var Modal = (function() {
     trig.classList.add('modal__trigger--active');
 
     // these values are used for scale the temporary div to the same size as the modal
-    scaleX = mProps.width / trigProps.width;
-    scaleY = mProps.height / trigProps.height;
+    // scaleX = mProps.width / trigProps.width;
+    // scaleY = mProps.height / trigProps.height;
 
-    scaleX = scaleX.toFixed(3); // round to 3 decimal places
-    scaleY = scaleY.toFixed(3);
+    // scaleX = scaleX.toFixed(3); // round to 3 decimal places
+    // scaleY = scaleY.toFixed(3);
 
 
     // these values are used to move the button to the center of the window
-    transX = Math.round(xc - trigProps.left - trigProps.width / 2);
-    transY = Math.round(yc - trigProps.top - trigProps.height / 2);
+    // transX = Math.round(xc - trigProps.left - trigProps.width / 2);
+    // transY = Math.round(yc - trigProps.top - trigProps.height / 2);
 
 		// if the modal is aligned to the top then move the button to the center-y of the modal instead of the window
     if (m.classList.contains('modal--align-top')) {
@@ -97,8 +97,11 @@ var Modal = (function() {
     if (!isOpen) {
       // select the content inside the modal
       var content = m.querySelector('.modal__content');
+       var prevention = m.querySelector('.modal__close');
+       var body = document.querySelector('.home');
       // reveal the modal
       m.classList.add('modal--active');
+      body.classList.add('modal--overflow');
       // reveal the modal content
       content.classList.add('modal__content--active');
 
@@ -122,11 +125,12 @@ var Modal = (function() {
 
   var close = function(event) {
 
-		event.preventDefault();
+		// event.preventDefault();
     event.stopImmediatePropagation();
 
     var target = event.target;
     var div = document.getElementById('modal__temp');
+    var body = document.querySelector('.home');
 
     /**
      * make sure the modal__bg or modal__close was clicked, we don't want to be able to click
@@ -146,7 +150,7 @@ var Modal = (function() {
 
 			for (var i = 0; i < len; i++) {
 				modals[i].classList.remove('modal--active');
-				content[i].classList.remove('modal__content--active');
+        content[i].classList.remove('modal__content--active');
 				trigger[i].style.transform = 'none';
         trigger[i].style.webkitTransform = 'none';
 				trigger[i].classList.remove('modal__trigger--active');
@@ -164,8 +168,9 @@ var Modal = (function() {
         window.requestAnimationFrame(function() {
           // remove the temp div from the dom with a slight delay so the animation looks good
           div.remove();
+          body.classList.remove('modal--overflow');
         });
-      }, contentDelay - 50);
+      }, contentDelay = 50);
     }
 
   };
