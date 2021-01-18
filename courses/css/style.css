@@ -24876,7 +24876,7 @@ body.rtl .elementor-506 .elementor-element.elementor-element-51df0b8 {
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 .elementor-506 .elementor-element.elementor-element-0b07e2f {
-  z-index: 999;
+  z-index: 5;
 }
 .elementor-506 .elementor-element.elementor-element-2dcb187 {
   text-align: left;
@@ -26714,139 +26714,12 @@ body .elementor-271 .elementor-element.elementor-element-e71864d .elementor-labe
     font-size: 13px;
   }
 }
-/*__________MODAL___________*/
-
-.white-popup {
-  position: relative;
-  background: #FFF;
-  padding: 50px 35px;
-  width: auto;
-  max-width: 1000px;
-  margin: 20px auto;
-}
-.mfp-wrap {
-  overflow-y: auto;
-  overflow-x: hidden;
-}
 .modal--overflow {
   overflow: hidden;
 }
-/* Styles for dialog window 
-Fade-zoom animation for first dialog
-   */
-
-/* start state */
-
-.my-mfp-zoom-in .zoom-anim-dialog {
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transform: scale(0.8);
-}
-/* animate in */
-
-.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-/* animate out */
-
-.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0;
-}
-/* Dark overlay, start state */
-
-.my-mfp-zoom-in.mfp-bg {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-out;
-  -moz-transition: opacity 0.3s ease-out;
-  -o-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
-}
-/* animate in */
-
-.my-mfp-zoom-in.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-/* animate out */
-
-.my-mfp-zoom-in.mfp-removing.mfp-bg {
-  opacity: 0;
-}
-/*** Fade-move animation for second dialog
- */
-
-/* at start */
-
-.my-mfp-slide-bottom .zoom-anim-dialog {
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-transform: translateY(-20px) perspective( 600px) rotateX( 10deg);
-  -moz-transform: translateY(-20px) perspective( 600px) rotateX( 10deg);
-  -ms-transform: translateY(-20px) perspective( 600px) rotateX( 10deg);
-  -o-transform: translateY(-20px) perspective( 600px) rotateX( 10deg);
-  transform: translateY(-20px) perspective( 600px) rotateX( 10deg);
-}
-/* animate in */
-
-.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
-  opacity: 1;
-  -webkit-transform: translateY(0) perspective( 600px) rotateX( 0);
-  -moz-transform: translateY(0) perspective( 600px) rotateX( 0);
-  -ms-transform: translateY(0) perspective( 600px) rotateX( 0);
-  -o-transform: translateY(0) perspective( 600px) rotateX( 0);
-  transform: translateY(0) perspective( 600px) rotateX( 0);
-}
-/* animate out */
-
-.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
-  opacity: 0;
-  -webkit-transform: translateY(-10px) perspective( 600px) rotateX( 10deg);
-  -moz-transform: translateY(-10px) perspective( 600px) rotateX( 10deg);
-  -ms-transform: translateY(-10px) perspective( 600px) rotateX( 10deg);
-  -o-transform: translateY(-10px) perspective( 600px) rotateX( 10deg);
-  transform: translateY(-10px) perspective( 600px) rotateX( 10deg);
-}
-/* Dark overlay, start state */
-
-.my-mfp-slide-bottom.mfp-bg {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-out;
-  -moz-transition: opacity 0.3s ease-out;
-  -o-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
-}
-/* animate in */
-
-.my-mfp-slide-bottom.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-/* animate out */
-
-.my-mfp-slide-bottom.mfp-removing.mfp-bg {
-  opacity: 0;
-}
 .modal__content h3 {
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 24px;
+  line-height: 30px;
   margin-bottom: 10px;
 }
 .modal__content h3+p {
@@ -26855,27 +26728,15 @@ Fade-zoom animation for first dialog
 .modal__content p {
   font-size: 16px;
   line-height: 24px;
+  text-align: left;
 }
 .modal__content li {
   font-size: 16px;
   line-height: 24px;
+      text-align: left;
 }
 .modal__content ul {
   padding-left: 25px;
-}
-.mfp-close-btn-in .mfp-close {
-  color: #ffea6e;
-  padding: 0;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  transition: 0.6s;
-  margin: 10px;
-}
-.mfp-close-btn-in .mfp-close:hover {
-  background: rgba(0, 0, 0, 0.4);
-}
-.mfp-close:active {
-  top: 0;
 }
 .modal_button {
   display: block;
@@ -26896,3 +26757,125 @@ Fade-zoom animation for first dialog
   margin-right: -35px;
 }
 /*---------------------*/
+.loading-overlay {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(255,255,255,0.7);
+}
+.overlay-content {
+    position: absolute;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #555;
+}
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 40px 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 6;
+}
+.overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal {
+  background: white;
+  text-align: center;
+  padding: 40px 80px;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  
+}
+.overlay .modal.open {
+  opacity: 1;
+  pointer-events: inherit;
+  max-width: 1024px;
+    overflow-y: auto;
+    position: relative;
+}
+.overlay .modal.open .modal__content {
+  transform: translate(0, 0px);
+  opacity: 1;
+}
+.overlay .modal .modal__content {
+  transform: translate(0, -10px);
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+}
+.close-modal {
+    text-align: right;
+    display: block;
+}
+.mfp-close {
+    color: #e4c406;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: 0.6s;
+    margin: 10px;
+}
+button.mfp-close {
+    overflow: visible;
+    cursor: pointer;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    outline: 0;
+    padding: 0;
+    z-index: 1046;
+    box-shadow: none;
+    touch-action: manipulation;
+}
+.mfp-close {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: .65;
+    padding: 0 0 18px 10px;
+    font-style: normal;
+    font-size: 28px;
+}
+@media(max-width:768px) {
+  .overlay .modal {
+    padding: 20px 20px;
+    }
+    .overlay {
+       padding: 40px 20px 0 20px;
+    }
+}
+.elementor-element-5848037 img, .elementor-element-11e41f3 img {
+  width: 100%;
+}
+
+
+

@@ -9,15 +9,17 @@ $(".open-modal").on('click', function(e) {
 		modal = $($this).data("modal");
 		$url = $(this).data("url");
 		close = $(".close-modal");
+		$(modal).parents(".overlay").addClass("open");
 	$.ajax({
 		url: $url,
 		cache: false,
+		async: false,
 		data: {ajax: true},
 		success: function(dataResult) {
 			$('.modal__content').html(dataResult);
 		}
 	});
-	$(modal).parents(".overlay").addClass("open");
+	
 	setTimeout(function() {
 		$(modal).addClass("open");
 		close.css("display", "block");
@@ -37,7 +39,7 @@ $(".open-modal").on('click', function(e) {
 		}
 	});
 });
-$(".close-modal").on('click', function(e) {
+$(".modal").on('click', ".close-modal", function(e) {
 	e.preventDefault();
 	e.stopImmediatePropagation;
 	var $this = $(this),

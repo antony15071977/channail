@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 @font-face {
     font-family: 'Gilroy';
     font-style: normal;
@@ -55,10 +48,17 @@ main {
     max-width: 1024px;
     position: relative;
 }
-.bottom {
-    min-height: 100vh;
-    background: url(../img/bottom.png) top right no-repeat;
-    background-size: cover;
+.bottom::after {
+  content: "";
+  background: url(../img/bottom.png) top right no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;   
 }
 .top_background, .top_background_mobile {
     width: 100%;
@@ -179,6 +179,8 @@ main {
     display: none;
 }
 .slider_wrap {
+    z-index: 1;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -192,7 +194,7 @@ main {
 .hr_pre {
     width: 30%;
     margin: 0 auto;
-    margin-top: 10vw;
+    margin-top: 16vw;
     border: 1px solid #ffe55e;
     position: relative;
 }
@@ -208,6 +210,7 @@ main {
     display: block;
     margin-top: 5vw;
     position: relative;
+    z-index: 1;
 }
 @media (min-width:1025px) {
     .contacts {
@@ -227,7 +230,7 @@ main {
             justify-content: space-between;
     -ms-flex-line-pack: center;
         align-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 160px;
 }
 .contact_icons_img {
     width: 7vw;
@@ -236,6 +239,7 @@ main {
     max-height: 66px;
     position: relative;
     cursor: pointer;
+    z-index: 1;
 }
 .contact_icons_img a {
     width: 100%;
@@ -302,6 +306,7 @@ main {
     transition: 0.35s ease-in-out;
     height: 100%;
     overflow-y: auto;
+    z-index: 20;
 }
 .overlay.open {
     opacity: 1;
@@ -324,6 +329,7 @@ main {
 .overlay .modal.open {
     opacity: 1;
     pointer-events: inherit;
+    position: relative;
 }
 .overlay .modal.open .modal__content {
     opacity: 1;
@@ -340,9 +346,10 @@ main {
     transition: 0.35s ease-in-out;
 }
 .close-modal {
-    position: absolute;
-    right: 10%;
-    top: 2%;
+    position: sticky;
+    right: 7%;
+    top: 3%;
+    margin-left: auto;
     z-index: 15;
     display: block;
     width: 30px;
@@ -401,25 +408,21 @@ main {
 .modal_close {
     width: 30px;
 }
-.footer .footer_agree-container:first-child {
-    margin-bottom: 0;
-    padding-top: 50px;
-}
 .footer_agree-container {
     margin-right: 50px;
-    margin-left: auto;
     margin-bottom: 0;
-    width: 400px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 35px;
+    padding-top: 45px;
+    z-index: 1;
+    position: relative;
+    padding-left: 10%;
 }
 .footer_agree {
     display: block;
     text-align: left;
     color: #464646!important;
-    font-size: 17px;
-    line-height: 16px;
-    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 30px;
     width: fit-content;
     text-decoration: underline;
 }
@@ -432,25 +435,15 @@ main {
     margin-top: -153px;
     z-index: 2;
     text-align: left;
-    padding-left: 20%;
     padding-right: 6%;
 }
 .footer .pre-instrument-info {
     line-height: 21px;
     margin-bottom: 8px;
     margin-top: 7px;
-    padding-left: 10%;
 }
-.sectionContent {
-    position: absolute;
-    box-shadow: 0 0 10px rgba(38,50,56,0.15);
-    width: 41%;
-    height: 44vw;
-    max-height: 450px;
-    background-color: #ffffffe6;
-    border-radius: 9px;
-    top: 8%;
-    right: 32px;
+.footer {
+    background-color: #fef3c9;
 }
 .payment .contacts {
     padding-top: 5vw;
@@ -461,6 +454,14 @@ main {
 }
 .show_700_block {
     display: none;
+}
+.footer_info_container {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.footer_info_block {
+    width: 50%;
 }
 @media (max-width:768px) {
     .modal_container_img {
@@ -503,20 +504,12 @@ main {
     }
 }
 @media (max-width: 600px) {
-    .footer_agree-container {
-        margin-right: auto;
-        margin-left: auto;
-        width: fit-content;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    .footer .footer_agree-container:first-child {
+    .footer .footer_agree-container {
         padding-top: 30px;
     }
     .footer_agree {
         font-size: 14px;
-        line-height: 14px;
-        margin-bottom: 17px;
+        line-height: 22px;
     }
     .pre-instrument-info {
         font-size: 12px;
@@ -541,17 +534,18 @@ main {
     }
 }
 @media (max-width:585px) {
-    .bottom {
-        background: url(../img/320_bottom.png) top center no-repeat;
-        background-size: cover;
+    .swiper-container {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
     .slider_container a {
-        font-size: 8.5vw;
-        line-height: 11vw;
+        font-size: 5.5vw;
+        line-height: 7vw;
     }
     .contact_icons {
         width: 77%;
-        margin-top: 29px;
+        margin-top: 35px;
+        padding-bottom: 45px;
     }
     .contact_icons_img {
         width: 15vw;
@@ -569,6 +563,26 @@ main {
     }
 }
 @media (max-width:500px) {
+    .bottom::after {
+        content: "";
+        background: url(../img/320_bottom.png) top right no-repeat;
+        background-size: contain;
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 0;
+    }
+    .slider_container a {
+        font-size: 7vw;
+        line-height: 10vw;
+        letter-spacing: 0;
+    }
+    .slider_container a span {
+        top: 52%;
+    }
     .payment .bottom {
         padding-top: 30%;
     }
@@ -629,9 +643,35 @@ main {
                 order: 1;
     }
     .swiper-container {
-        margin: 0 35px;
+        margin: 15px 20vw;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        padding: 0 35px 0 35px;
+    }
+}
+@media (max-width:374px) {
+    .swiper-container {
+        margin: 15px 13vw;
+    }
+    .slider_container a {
+        font-size: 8.5vw;
+        line-height: 11vw;
+        letter-spacing: 0px;
+    }
+    .slider_container a span {
+        top: 52%;
     }
     .swiper-button-next, .swiper-button-prev {
         padding: 0 22px 0 22px;
     }
+    .footer_info_container {
+        flex-wrap: wrap;
+    }
+    .footer_info_block {
+        width: 100%;
+    }
 }
+
+
+
+
