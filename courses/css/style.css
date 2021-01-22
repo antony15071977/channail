@@ -26646,6 +26646,7 @@ body .elementor-271 .elementor-element.elementor-element-e71864d .elementor-labe
   background-color: #ffec00;
   color: #0c0c0c;
   border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
 }
 .elementor-271 .elementor-element.elementor-element-e71864d .elementor-message {
   font-size: 14px;
@@ -26788,7 +26789,6 @@ body .elementor-271 .elementor-element.elementor-element-e71864d .elementor-labe
   padding: 40px 40px 0 40px;
   position: fixed;
   top: 0;
-  left: 0;
   background: rgba(0, 0, 0, 0.75);
   opacity: 0;
   pointer-events: none;
@@ -26796,6 +26796,8 @@ body .elementor-271 .elementor-element.elementor-element-e71864d .elementor-labe
   height: 100%;
   overflow-y: auto;
   z-index: 6;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .overlay.open {
   opacity: 1;
@@ -26876,6 +26878,46 @@ button.mfp-close {
 .elementor-element-5848037 img, .elementor-element-11e41f3 img {
   width: 100%;
 }
-
+.visually-hidden {
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(100%);
+}
+.form__input-file label {
+    display: inline-block;
+    width: 192px;
+    padding: 16px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #3b4154;
+}
+.form__input-file {
+  background-color: transparent!important;
+}
+#avatar-error {
+  text-transform: none;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+}
+.overlay-content {
+    position: absolute;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #555;
+}
 
 

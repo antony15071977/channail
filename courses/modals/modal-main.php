@@ -38,7 +38,7 @@ $content = '<div class="elementor-widget-wrap">
 	<div class="elementor-element elementor-element-e71864d elementor-button-align-stretch elementor-widget elementor-widget-form">			
 		<div class="elementor-widget-container">
 			<div class="form-result-error d-none">Ошибка отправления, попробуйте еще раз!</div>
-			<form class="elementor-form" action="" method="post" id="feedback3">
+			<form class="elementor-form" action="'.$points.'ajax-form.php" method="post" id="feedback3">
 				<div class="elementor-form-fields-wrapper elementor-labels-">
 					<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required">
 						<label for="name" class="control-label">Имя</label>
@@ -128,8 +128,7 @@ $content = '<div class="elementor-widget-wrap">
 	<div class="elementor-element elementor-element-82baddc elementor-widget elementor-widget-heading" data-element_type="widget" data-id="82baddc" data-widget_type="heading.default">
 		<div class="elementor-widget-container">
 			<div class="elementor-heading-title elementor-size-default">
-				Нажимая кнопку "Оставить заявку" Вы даете согласие на обработку своих данных<br>
-				в соответствии с <a href="privacy.html" style="color:#888;text-decoration:underline;">"Политикой конфиденциальности"</a>
+				Нажимая кнопку "Оставить заявку" Вы даете <a class="paymentTermsLink" style="color:#888;text-decoration:underline;" href="'.$points.'agreement.html" target="_blank">согласие на обработку персональных данных</a> в соответствии с нашей <a class="paymentTermsLink" style="color:#888;text-decoration:underline;" href="'.$points.'privacy.html" target="_blank">политикой защиты персональной информации </a>
 			</div>
 		</div>
 	</div>

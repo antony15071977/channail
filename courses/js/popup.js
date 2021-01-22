@@ -9,15 +9,16 @@ $(".open-modal").on('click', function(e) {
 	var $this = $(this),
 		modal = $($this).data("modal");
 		$url = $(this).data("url");
+	$(modal).parents(".overlay").addClass("open");
 	$.ajax({
 		url: $url,
 		cache: false,
+		async: false,
 		data: {ajax: true},
 		success: function(dataResult) {
 			$('.modal__content').html(dataResult);
 		}
 	});
-	$(modal).parents(".overlay").addClass("open");
 	setTimeout(function() {
 		$(modal).addClass("open");
 		$(modal).css("display", "block");
