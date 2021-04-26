@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Current';
+  src: url('Current.woff') format('woff'),
+       url('Current.ttf') format('truetype'),
+       url('Current.svg#Current') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'current';
+  src: url('current.eot');
+  src: url('current.woff2') format('woff2'),
+       url('current.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

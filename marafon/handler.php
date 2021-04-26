@@ -1,6 +1,8 @@
 <?php
 // хешМД5 для ссылки КУПИТЬ
-// MerchantLogin:OutSum:InvId:Пароль#1:sph_item=
+// MerchantLogin:OutSum:InvId:Пароль#1:shp_item=
+// https://i-leon.ru/tools/md5
+// вместо InvId стваить 0
 $mrh_pass2 = "baj8gmZ2NbVcJ7COP4S9";
 // чтение параметров
 $out_summ = $_REQUEST["OutSum"];
@@ -20,6 +22,7 @@ $array_links = [
     21 => array("Курс «Марафон перфекциониста»", 30000),
     27 => array("Курс «Марафон перфекциониста»", 15000),
     28 => array("Курс «Марафон перфекциониста»", 18000),
+    29 => array("Курс «Марафон перфекциониста»", 38000),
 
 ];
 
@@ -45,11 +48,11 @@ if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POS
             $mes = "
             Поздравляю!
             Только что Вы приобрели доступ к урокам на учебной платформе Channail4.\n
-            Свяжитесь с нашим администратором с помощью этой электронной почты channail4school@yandex.ru для записи на забронированный Вами $link.\n
+            Свяжитесь с нашим администратором с помощью этой электронной почты Channail4office@yandex.ua для записи на забронированный Вами $link.\n
             -------------------------------\n
             
             Если Вас интересует более подробная информация по нашим курсам, пожалуйста, свяжитесь с нами!\n
-            channail4school@yandex.ru
+            Channail4office@yandex.ua
             ";
             $mes2 = "
             Поздравляю!
@@ -65,7 +68,7 @@ if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POS
             -------------------------------\n
             
             Если Вас интересует более подробная информация по нашим курсам, пожалуйста, свяжитесь с нами!\n
-            channail4school@yandex.ru
+            Channail4office@yandex.ua
             ";
             $mes4 = "
             Поздравляю!
@@ -73,7 +76,7 @@ if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POS
             Свяжитесь с Вашим покупателем с помощью этой электронной почты $to_email для записи на приобретенный им $link.\n
             -------------------------------\n
             ";
-             $to_email2 = 'channail4school@yandex.ru';
+             $to_email2 = 'Channail4office@yandex.ua';
             //$to_email2 = 'i.avraamy2@gmail.com';
 
              // признак успешно проведенной операции

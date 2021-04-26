@@ -285,12 +285,12 @@ p {
 	color: #464646;
 	text-align: center;
 }
-.lessons-block:nth-child(10) .lessons-block_img {
+.lessons-block:nth-child(15) .lessons-block_img {
 	max-width: 630px;
 	margin: -107px auto 0;
 	cursor: pointer;
 }
-.lessons-block:nth-child(10) .lessons-block_background {
+.lessons-block:nth-child(15) .lessons-block_background {
 	margin-top: -597px;
 }
 .irina-block_hr {
@@ -1098,17 +1098,17 @@ Fade-zoom animation for first dialog
 	.lessons-block {
 		margin-bottom: 17px;
 	}
-	.lessons-block:nth-child(10) .lessons-block_img {
+	.lessons-block:nth-child(15) .lessons-block_img {
 		margin: -35px auto 0;
 		max-width: 238px;
 	}
-	.lessons-block:nth-child(10) .lessons-block_background {
+	.lessons-block:nth-child(15) .lessons-block_background {
 		margin-top: 0;
 	}
-	.lessons-block:nth-child(10) .lessons-block_name {
+	.lessons-block:nth-child(15) .lessons-block_name {
 		margin-top: -429px;
 	}
-	.lessons-block:nth-child(10) .lessons-block-lent {
+	.lessons-block:nth-child(15) .lessons-block-lent {
 		height: 64px;
 	}
 	.irina-block .top-box_p {

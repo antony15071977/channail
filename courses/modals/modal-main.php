@@ -24,7 +24,7 @@ $content = '<div class="elementor-widget-wrap">
 	<div class="elementor-element elementor-element-12bacf8 elementor-widget elementor-widget-divider">
 		<div class="elementor-widget-container">
 			<div class="elementor-divider">
-				<span class="elementor-divider-separator"></span>
+				<hr class="elementor-divider-separator">
 			</div>
 		</div>
 	</div>
@@ -65,53 +65,23 @@ $content = '<div class="elementor-widget-wrap">
 								<div class="elementor-heading-title elementor-size-default">
 									Либо можете прямо сейчас связаться с нами, используя телефон, Direct Instagram или WhatsApp
 								</div>
-								<div class="container block-item has-pb-1 has-pt-1" style="max-width: 1080px;">
-									<div class="row">
-										<div class="col-xs-12 col-sm-10 col-md-8 col-md-offset-2 b-9679784">
-											<div class="socials block-messenger" block_id="9679784" index="8">
-												<div class="row row-small">
-													<div class="col-xs-12">
-														<a href="tel:+79855861415"  class="button btn-link btn-link-block btn-socials btn-link-tel btn-link-styled" rel="nofollow" target="_blank"><!----> 
-															<img src="'.$points.'img/tel.png" class="iconsoc">
-															<span>Позвонить</span>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="container block-item has-pb-1 has-pt-1" style="max-width: 1024px;">
+									<a href="tel:+79855861415"  class="button btn-link btn-link-block btn-socials btn-link-tel btn-link-styled" rel="nofollow" target="_blank"><!----> 
+										<img src="'.$points.'img/tel.png" class="iconsoc">
+										<span>Позвонить</span>
+									</a>
 								</div>
-								<div class="container block-item has-pb-1 has-pt-1" style="max-width: 1080px;">
-									<div class="row">
-										<div class="col-xs-12 col-sm-10 col-md-8 col-md-offset-2 b-9679784">
-											<div class="socials block-messenger" block_id="9679784" index="8">
-												<div class="row row-small">
-													<div class="col-xs-12">
-														<a href="https://wa.me/79855861415?text=Здравствуйте%2C%20хотела%20бы%20узнать%20" aria-label="Задать вопрос в WhatsApp" class="button btn-link btn-link-block btn-socials btn-link-whatsapp btn-link-styled" rel="nofollow" target="_blank"><!----> 
-															<img src="'.$points.'img/whats.png" class="iconsoc">
-															<span>Задать вопрос в WhatsApp</span>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="container block-item has-pb-1 has-pt-1" style="max-width: 1024px;">
+									<a href="https://wa.me/79855861415?text=Здравствуйте%2C%20хотела%20бы%20узнать%20" aria-label="Задать вопрос в WhatsApp" class="button btn-link btn-link-block btn-socials btn-link-whatsapp btn-link-styled" rel="nofollow" target="_blank"> 
+											<img src="'.$points.'img/whats2.png" class="iconsoc">
+											<span>Задать вопрос в WhatsApp</span>
+									</a>
 								</div>
-								<div class="container block-item has-pb-1 has-pt-1" style="max-width: 1080px;">
-									<div class="row">
-										<div class="col-xs-12 col-sm-10 col-md-8 col-md-offset-2 b-9679784">
-											<div class="socials block-messenger" block_id="9679784" index="8">
-												<div class="row row-small">
-													<div class="col-xs-12">
-														<a href="https://www.instagram.com/chan_nail4school/" aria-label="Задать вопрос в Instagram" class="button btn-link btn-link-block btn-socials btn-link-inst btn-link-styled" rel="nofollow" target="_blank"><!----> 
-															<img src="'.$points.'img/insta.png" class="iconsoc"> 
-															<span>Задать вопрос в Instagram</span>
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="container block-item has-pb-1 has-pt-1" style="max-width: 1024px;">
+									<a href="https://www.instagram.com/chan_nail4school/" aria-label="Задать вопрос в Instagram" class="button btn-link btn-link-block btn-socials btn-link-inst btn-link-styled" rel="nofollow" target="_blank"><!----> 
+										<img src="'.$points.'img/insta2.png" class="iconsoc"> 
+										<span>Задать вопрос в Instagram</span>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -146,6 +116,7 @@ if (isset($_GET['ajax'])&&$_GET['ajax']=='true') {
 	<meta content="Школа маникюра ШАННЭЙЛ 4" property="og:site_name">
 	<meta name="description" content="Авторская школа маникюра в Москве Кутикульное Царство. Очное и онлайн обучение маникюрному икусству.">
 	<meta property="og:description" content="Школа маникюра ШАННЭЙЛ 4. Авторская школа маникюра в Москве Кутикульное Царство. Очное и онлайн обучение маникюрному икусству.">
+	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href=\'../css/style.css\' rel=\'stylesheet\' type=\'text/css\'>
 	<link href=\'index.html\' rel=\'shortlink\'>
 	<link href="../img/favicon.jpg" rel="icon" >

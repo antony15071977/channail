@@ -1,6 +1,8 @@
 <?php
 // хешМД5 для ссылки КУПИТЬ
 // MerchantLogin:OutSum:InvId:Пароль#1:shp_item=
+// https://i-leon.ru/tools/md5
+// вместо InvId стваить 0
 $mrh_pass2 = "f14aO6f8ehirw3iTTRgq";
 // чтение параметров
 $out_summ = $_REQUEST["OutSum"];
@@ -9,11 +11,22 @@ $shp_item = $_REQUEST["shp_item"];
 $crc = $_REQUEST["SignatureValue"];
 $crc = strtoupper($crc);
 $my_crc = strtoupper(md5("$out_summ:$inv_id:$mrh_pass2:shp_item=$shp_item"));
-//проверка секретного ключа
+// проверка секретного ключа
 if ($my_crc !=$crc) {
       echo "bad sign\n";
       exit();
     }
+$item = strval($_POST["shp_item"]);
+$findme = 'order_';
+$pos = strpos($item, $findme);
+
+if ($pos !== false) {
+    header("Location: https://channail4.ru/salon/agwd/?pay=robokassa", true, 307);
+    exit();
+} 
+
+
+
 
 //массив ссылок на продажу
 $array_links = [
@@ -40,6 +53,14 @@ $array_links = [
     24 => array("Курс ПЕДИКЮР «МОКАСИНОВАЯ СТОПА 2.0»", 5000),
     25 => array("Курс ПЕДИКЮР «МОКАСИНОВАЯ СТОПА 2.0»", 4000),
     26 => array("Курс ПЕДИКЮР «МОКАСИНОВАЯ СТОПА 2.0»", 6000),
+    27 => array("Курс «Основы слайсинга»", 26000),
+    28 => array("Курс «Основы слайсинга» + педикюр «Мокасиновая стопа 1.0»", 29000),
+    29 => array("Курс МАНИКЮР: «1 ФОРМА АНАТОМИЧЕСКОЙ ФРЕЗЫ»", 25000),
+    30 => array("Курс ПЕДИКЮР «МОКАСИНОВАЯ СТОПА 2.0»", 38000),
+    31 => array("Курс «АНАТОМИЧЕСКОЕ КОМБИ + ИДЕАЛЬНЫЙ ФРЕНЧ»", 16000),
+    32 => array("Курс «КЛАССИЧЕСКОЕ НАРАЩИВАНИЕ РЕСНИЦ, ОСНОВЫ И БАЗОВЫЕ ПРАВИЛА»", 13000),
+    33 => array("Курс «ОБЪЕМНОЕ НАРАЩИВАНИЕ РЕСНИЦ, ОСНОВЫ И БАЗОВЫЕ ПРАВИЛА»", 15500),
+    34 => array("Курс «BROW ПЕРФЕКЦИОНИСТ»", 11000)
 ];
 
 if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POST и переданы данные
@@ -63,11 +84,11 @@ if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POS
             $mes = "
             Поздравляю!
             Только что Вы приобрели доступ к урокам на учебной платформе Channail4.\n
-            Свяжитесь с нашим администратором с помощью этой электронной почты channail4school@yandex.ru для записи на забронированный Вами $link.\n
+            Свяжитесь с нашим администратором с помощью этой электронной почты Channail4office@yandex.ua для записи на забронированный Вами $link.\n
             -------------------------------\n
             
             Если Вас интересует более подробная информация по нашим курсам, пожалуйста, свяжитесь с нами!\n
-            channail4school@yandex.ru
+            Channail4office@yandex.ua
             ";
             $mes2 = "
             Поздравляю!
@@ -83,7 +104,7 @@ if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POS
             -------------------------------\n
             
             Если Вас интересует более подробная информация по нашим курсам, пожалуйста, свяжитесь с нами!\n
-            channail4school@yandex.ru
+            Channail4office@yandex.ua
             ";
             $mes4 = "
             Поздравляю!
@@ -92,7 +113,7 @@ if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POS
             -------------------------------\n
             ";
 
-            $to_email2 = 'channail4school@yandex.ru';
+            $to_email2 = 'Channail4office@yandex.ua';
             // $to_email2 = 'i.avraamy2@gmail.com';
 
             

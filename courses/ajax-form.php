@@ -12,7 +12,7 @@ $sub = $_POST['sub'];
 
 //Теперь давайте настроим куда отправляем и откуда
 
-$my_email = 'channail4school@yandex.ru'; // Куда отправляем
+$my_email = 'Channail4office@yandex.ua'; // Куда отправляем
 $sender_email = '<zayavka@channail4.com>'; // От кого отправляем
 $title = "ЗАЯВКА С САЙТА"; 
 

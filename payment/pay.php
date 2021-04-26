@@ -38,9 +38,9 @@ if(isset($_GET["course_name"]) && isset($_GET["price"]) && isset($_GET["url"])){
 		<p class="footer_heading">Мы находимся здесь</p>
 		<div class="footer">
 			<div class="footer_agree-container">
-				<a class="footer_agree" href="https://goo.gl/maps/hRANBzD7e9aQiMZa6" rel="nofollow" target="_blank">Москва, Пресненская набережная д.8, строение 1, Офис 513М, 51 этаж.<br>Башня - Город Столиц.<br>м.Деловой центр</a>
+				<a class="footer_agree" href="https://goo.gl/maps/JGh8HRBvWjLcQhPm6" rel="nofollow" target="_blank">Москва, Краснопресненская набережная д.12, Центр Международной Торговли, 6 подъезд.<br>Вход со стороны Мантулинской улицы. Офис 422, 4 этаж. м.Деловой центр</a>
 			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.6543120327906!2d37.53695611619116!3d55.74713509989625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bdc5428a163%3A0x3b0b79e32bc6df32!2zZ29yb2QgU3RvbGl0cywg0J_RgNC10YHQvdC10L3RgdC60LDRjyDQvdCw0LEuLCA4INGB0YLRgNC-0LXQvdC40LUgMSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyMzMxNw!5e0!3m2!1sru!2sua!4v1593369982099!5m2!1sru!2sua" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2245.654484700824!2d37.5391448!3d55.7471321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acb7c764788b9%3A0x50f954d0359e41ee!2z0KjQutC-0LvQsCDQvNCw0L3QuNC60Y7RgNCwIENoYW5fbmFpbDQgbmFpbCBjb3V0dXJl!5e0!3m2!1sru!2sua!4v1619253124976!5m2!1sru!2sua" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			<div class="footer_agree-container">
 				<a href="../courses/agreement.html" target="_blank" class="footer_agree">Согласие на обработку персональных данных</a>
 				<a href="../courses/oferta_ip.html" target="_blank" class="footer_agree">Договор оферты</a>
@@ -53,7 +53,7 @@ if(isset($_GET["course_name"]) && isset($_GET["price"]) && isset($_GET["url"])){
 				<p class="pre-instrument-info">КПП 770301001</p>
 				<p class="pre-instrument-info">ОГРН 1197746551540</p>
 				<p class="pre-instrument-info">Телефон: +7 (985) 586-14-15</p>
-				<p class="pre-instrument-info">Email: <a href="mailto:channail4school@yandex.ru" class="elementor-heading-title elementor-size-default">channail4school@yandex.ru</a></p>
+				<p class="pre-instrument-info">Email: <a href="mailto:Channail4office@yandex.ua" class="elementor-heading-title elementor-size-default">Channail4office@yandex.ua</a></p>
 				<p class="pre-instrument-info"><strong>Генеральный директор Креминская Ирина Юрьевна</strong></p>
 				<br>
 			<p class="pre-instrument-info"><strong>ИП КРЕМИНСКАЯ И.Ю.</strong></p>
@@ -66,7 +66,7 @@ if(isset($_GET["course_name"]) && isset($_GET["price"]) && isset($_GET["url"])){
 				<p class="pre-instrument-info">БИК: 044525225</p>
 				<p class="pre-instrument-info">Корр. счет: 30101810400000000225</p>
 				<p class="pre-instrument-info">Телефон: (898551715449), 89855861415</p>
-				<p class="pre-instrument-info">Email: <a href="mailto:channail4school@yandex.ru" class="elementor-heading-title elementor-size-default">channail4school@yandex.ru</a></p>
+				<p class="pre-instrument-info">Email: <a href="mailto:Channail4office@yandex.ua" class="elementor-heading-title elementor-size-default">Channail4office@yandex.ua</a></p>
 				
 			<div class="socials block-messenger">
 				<div class="row row-small">

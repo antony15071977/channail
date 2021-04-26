@@ -38,7 +38,7 @@ $(document).ready(function() {
 			url: 'ajax-form.php', //url страницы (ajax-form.php)
 			type: "POST", //метод отправки
 			dataType: "html", //формат данных
-			data: $("#" + formId).serialize(), // Сеарилизуем объекты формы
+			data: $("#" + formId).serialize(), // Сериализуем объекты формы
 			success: function(response) { //Данные отправлены успешно
 				var formParent = $('#' + formId).parent();
 				$('.form-result-success', formParent).removeClass('d-none').addClass('d-success');

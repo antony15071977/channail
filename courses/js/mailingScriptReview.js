@@ -6,9 +6,6 @@ $(document).ready(function() {
 				name: {
 					required: true,
 				},
-				avatar: {
-					required: true,
-				},
 				comment: {
 					required: true,
 				},
@@ -28,9 +25,6 @@ $(document).ready(function() {
 				comment: {
 					required: "Текст отзыва обязателен",
 				},
-				avatar: {
-					required: "Обязательно загрузите файл изображения",
-				},
 			},
 			/*Отправка формы в случае успеха валидации*/
 			submitHandler: function(form) {
@@ -43,7 +37,7 @@ $(document).ready(function() {
 		var formRg = $('#feedback3')[0];
 		var formData = new FormData(formRg);
 		$.ajax({
-			url: 'ajax-review.php', //url страницы (ajax-form.php)
+			url: '/courses/review/ajax-review.php', //url страницы (ajax-form.php)
 			type: "POST", //метод отправки
 			data: formData,
 			dataType: "json",
@@ -61,9 +55,6 @@ $(document).ready(function() {
 					var formParent = $('#' + formId).parent();
 					$('.form-result-success', formParent).removeClass('d-none').addClass('d-success');
 					$('#' + formId)[0].reset();
-					$('#image').css('background', 'none');
-		            $('#image').css('width', '0px');
-		            $('#image').css('height', '0px');
 					setTimeout(function() {
 						$('.form-result-success', formParent).removeClass('d-success').addClass('d-none');
 					}, 4000);
