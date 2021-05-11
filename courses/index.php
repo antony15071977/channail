@@ -276,7 +276,14 @@ if ($res) {
         <h6 class="video_h6">ВИДЕО О ШКОЛЕ</h6>
         <p class="video_p">Окунитесь в интереснейший и захватывающий мир маникюрного искусства!</p>
         <div class="video_frame">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TQk7qrvAdec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TQk7qrvAdec" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+    html,body{height:100%}
+    img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+    span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+    </style>
+    <a href=https://www.youtube.com/embed/TQk7qrvAdec?autoplay=1>
+    <img src=https://channail4.com/courses/img/youtube.png alt='Demo video'>
+    </a>" loading="lazy" allowfullscreen></iframe>
         </div>
     </section>
     <section class="regalies">

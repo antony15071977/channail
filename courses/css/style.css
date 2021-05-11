@@ -425,7 +425,7 @@ main {
     width: 73.5%;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 41.25%;
+    padding-bottom: 45.25%;
     height: 0;
     overflow: hidden;
 }
@@ -2291,7 +2291,7 @@ main {
     .video_frame {
         margin-left: 5.2%;
         margin-right: 5.2%;
-        padding-bottom: 50.4%;
+        padding-bottom: 55.4%;
         width: auto;
     }
     .reasons .reasons_item:nth-child(3) .reasons_box, .reasons .reasons_item:nth-child(6) .reasons_box, .reasons .reasons_item:nth-child(12) .reasons_box {
