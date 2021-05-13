@@ -12,6 +12,11 @@ $content = '<h1>ПЕДИКЮР «МОКАСИНОВАЯ СТОПА 2.0»</h1>
 					<li>Для новичков, желающих развиваться в Nail сфере</li>
 					<li>Мастеров со стажем, уставших от однообразия и жаждущих новизны&nbsp;</li>
 				</ul>
+				<section class="video">
+				    <div class="video_frame">
+				        <iframe width="560" height="315" src="https://www.youtube.com/embed/cLtvJZDpLJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				    </div>
+				</section>
 				<p>Вас ждет две атравматичные запатентованные техники для обработки пальчиков:</p>
 				<p><strong>Новый мокрый вид педикюра &ndash; &laquo;слайсинг&raquo;.</strong><br> <br> Анатомия &ldquo;Слайсинг движений&rdquo; &ndash; техника, работающая по пленочной анатомии, не вынимая инструмента из бокового подногтевого кармана &laquo;гипонихия&raquo;. Не травмирует, а безопасно обрабатывает кожу на максимальной глубине. Заменяем травмоопасный срез на сепарацию, вредный &laquo;щипок&raquo; на скользящие движения по птеригию. Выполняется специальными щипчиками геометрической формы полотна. Техника накопительная, после 3-4 сеансов, приостанавливается рост околоногтевой кожи.<strong>&nbsp;</strong></p>
 				<p><strong>Аппаратный педикюр &laquo;1 форма Анатомической фрезы&raquo;</strong>&nbsp;</p>

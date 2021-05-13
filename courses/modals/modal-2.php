@@ -17,7 +17,12 @@ $content = '<h1>МАНИКЮР: «1 ФОРМА АНАТОМИЧЕСКОЙ ФРЕ
 					<li>Для новичков, желающих развиваться в Nail сфере</li>
 					<li>Мастеров со стажем, уставших от однообразия и жаждущих новизны</li>
 				</ul>
-				<p><br>
+				<section class="video">
+				    <div class="video_frame">
+				        <iframe width="560" height="315" src="https://www.youtube.com/embed/fzNb_Nyv4Dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				    </div>
+				</section>
+				<br>
 					<strong>Подробнее об «1 форме Анатомической фрезе»:</strong></p>
 					<p>20 лет исследований и разработок, 4 года проверки на уникальность, 100 новизна, международный уровень, запатентованная технология. Все это - аппаратный маникюр «1 форма Анатомической фрезы».</p>
 					<p>Предполагает новую постановку рук мастера и клиента для безопасной работы в 3 глубине.</p>

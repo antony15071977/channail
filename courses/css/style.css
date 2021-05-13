@@ -408,17 +408,6 @@ main {
 .video {
     padding-top: 5%;
 }
-/*.video_frame {
-    max-width: 752px;
-    max-height: 465px;
-    min-width: 255px;
-    min-height: 178px;
-    width: 73.5%;
-    height: 45.45vw;
-    margin: 0 auto;
-    background: url(../img/youtube.png) top center / cover no-repeat;
-}*/
-
 .video_frame {
     max-width: 752px;
     max-height: 465px;
@@ -428,6 +417,9 @@ main {
     padding-bottom: 45.25%;
     height: 0;
     overflow: hidden;
+}
+.modal__content .video_frame {
+    padding-bottom: 41.25%;
 }
 .video_frame iframe {
     position: absolute;
@@ -2291,8 +2283,11 @@ main {
     .video_frame {
         margin-left: 5.2%;
         margin-right: 5.2%;
-        padding-bottom: 55.4%;
+        padding-bottom: 49.4%;
         width: auto;
+    }
+    .modal__content .video_frame {
+        padding-bottom: 49.3%;
     }
     .reasons .reasons_item:nth-child(3) .reasons_box, .reasons .reasons_item:nth-child(6) .reasons_box, .reasons .reasons_item:nth-child(12) .reasons_box {
         margin-bottom: 2px;

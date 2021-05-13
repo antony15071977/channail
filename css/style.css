@@ -191,6 +191,28 @@ main {
         -ms-flex-align: center;
             align-items: center;
 }
+.buttons_button {
+    font-family: "Roboto", Sans-serif;
+    font-weight: 400;
+    color: #464646;
+    padding: 32px 15px;
+    width: 68%;
+    background-color: #ffe55e;
+    font-size: 21.6px;
+    line-height: 23.5px;
+    margin: 100px auto;
+    margin-bottom: 35px;
+    display: block;
+    text-align: center;
+    border: 2px solid #ffffff;
+    z-index: 1000;
+    position: relative;
+}
+.buttons_button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffe55e;
+}
+
 .hr_pre {
     width: 30%;
     margin: 0 auto;
@@ -563,6 +585,12 @@ main {
     }
 }
 @media (max-width:500px) {
+    .buttons_button {
+        width: 63%;
+        font-size: 16.6px;
+        margin: 50px auto;
+        margin-bottom: 19px;
+    }
     .bottom::after {
         content: "";
         background: url(../img/320_bottom.png) top right no-repeat;
